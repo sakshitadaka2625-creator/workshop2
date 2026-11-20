@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#d0bcff", "tertiary-container": "#ca8100", "secondary-container": "#03b5d3", "surface-container-low": "#171b26", "surface-container-highest": "#313540", "inverse-primary": "#6d3bd7", "surface-container-high": "#262a35", "secondary": "#4cd7f6", "primary-container": "#a078ff", "on-surface": "#dfe2f1", "primary-fixed": "#e9ddff", "surface-bright": "#353944", "on-primary": "#3c0091", "outline": "#958ea0", "on-surface-variant": "#cbc3d7", "tertiary-fixed": "#ffddb8", "on-error-container": "#ffdad6", "on-background": "#dfe2f1", "on-secondary": "#003640", "on-secondary-fixed-variant": "#004e5c", "on-primary-fixed": "#23005c", "outline-variant": "#494454", "error": "#ffb4ab", "error-container": "#93000a", "tertiary-fixed-dim": "#ffb95f", "on-primary-fixed-variant": "#5516be", "primary": "#d0bcff", "secondary-fixed-dim": "#4cd7f6", "inverse-surface": "#dfe2f1", "surface-dim": "#0f131d", "background": "#0f131d", "on-secondary-fixed": "#001f26", "inverse-on-surface": "#2c303b", "on-tertiary-fixed-variant": "#653e00", "on-tertiary": "#472a00", "on-primary-container": "#340080", "tertiary": "#ffb95f", "on-error": "#690005", "surface-container": "#1c1f2a", "surface-variant": "#313540", "surface-container-lowest": "#0a0e18", "on-secondary-container": "#00424e", "surface": "#0f131d", "secondary-fixed": "#acedff", "surface-tint": "#d0bcff", "on-tertiary-container": "#3e2400", "on-tertiary-fixed": "#2a1700" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Space Grotesk"], "label-badge": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "label-code": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-md": ["Space Grotesk"] }, fontSize: { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.45)]"><div class="h-28 px-margin flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="relative flex items-center"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/90 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-code text-label-code text-secondary">usr_9f4a</span><span class="material-symbols-outlined text-[14px] text-outline">expand_more</span><select class="absolute inset-0 opacity-0 cursor-pointer w-full h-full"><option value="usr_9f4a">usr_9f4a... (Dev Admin)</option><option value="usr_2b1c">usr_2b1c... (Alex - Tech Club Lead)</option><option value="usr_7e3d">usr_7e3d... (Maya - Student)</option></select></div></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest/80"><span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(208,188,255,0.7)]"></span><span class="font-label-badge text-label-badge uppercase tracking-wider text-primary">Admin</span><span class="material-symbols-outlined text-[14px] text-on-surface-variant">unfold_more</span><select class="absolute inset-0 opacity-0 cursor-pointer w-full h-full"><option value="student">Student (Indigo)</option><option value="organizer">Organizer (Emerald)</option><option selected="" value="admin">Admin (Violet)</option></select></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between mt-0.5"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">CampusPulse</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-badge text-label-badge"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>LIVE</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Host Event</span></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- Dynamic Atmospheric Glow Pools -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-12 -left-16 w-56 h-56 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-44 -right-16 w-60 h-60 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<!-- Organizer Banner / Status Node -->
+<div class="px-margin pt-4 pb-2">
+<div class="bg-surface-container-high/90 rounded backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-secondary/20 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_10px_rgba(76,215,246,0.8)] animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Alex Chen</span>
+<span class="font-label-code text-label-code text-on-surface-variant bg-surface-container-lowest/80 px-2 py-0.5 rounded-full">tech-lead</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase tracking-wider">
+            Organizer Mode
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Organizer Permissions Active: You can create new events, register for campus events, and inspect attendee rosters in real-time.
+        </p>
+<div class="flex items-center gap-4 pt-1">
+<div class="flex items-center gap-1.5 font-label-code text-label-code text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>NODE_KEY: usr_2b1c</span>
+</div>
+<span class="text-outline-variant font-body-sm text-body-sm">•</span>
+<div class="flex items-center gap-1.5 font-label-code text-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">sensors</span>
+<span>Sync: Live</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats Metric Rail -->
+<div class="px-margin py-3">
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container/80 backdrop-blur-md rounded p-3 flex flex-col gap-1 shadow-md">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">Hosted</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">03</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span> 1 active
+          </span>
+</div>
+<div class="bg-surface-container/80 backdrop-blur-md rounded p-3 flex flex-col gap-1 shadow-md">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">Checked-In</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-bold">74%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CTF Live</span>
+</div>
+<div class="bg-surface-container/80 backdrop-blur-md rounded p-3 flex flex-col gap-1 shadow-md">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">Rep Score</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-tertiary font-bold">998</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gold Tier</span>
+</div>
+</div>
+</div>
+<!-- Hero Card: Deploy New Event -->
+<div class="px-margin py-2">
+<div class="bg-surface-container-low/95 backdrop-blur-2xl rounded-lg p-space-md shadow-2xl relative">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Host New Event</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Broadcast instantly to CampusPulse feed</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-code text-label-code">
+            DRAFT_v2
+          </span>
+</div>
+<form class="flex flex-col gap-space-md" id="host-event-form" onsubmit="event.preventDefault(); deployEvent();">
+<!-- Title Input -->
+<div class="flex flex-col gap-1">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium flex items-center justify-between" for="event-title">
+<span>Event Title</span>
+<span class="font-label-code text-label-code text-outline" id="title-counter">0/60</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">title</span>
+<input class="w-full bg-surface-container-highest/60 text-on-surface placeholder:text-outline font-body-md text-body-md pl-10 pr-3 py-2.5 rounded focus:outline-none focus:bg-surface-container-highest transition-all" id="event-title" maxlength="60" oninput="document.getElementById('title-counter').innerText = `${this.value.length}/60`" placeholder="e.g. Midnight Algorithmic Sprint" required="" type="text"/>
+</div>
+</div>
+<!-- Category Selector Chips -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Category Sphere</label>
+<div class="flex flex-wrap gap-2" id="category-group">
+<button class="category-chip px-3 py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 shadow-[0_0_14px_rgba(208,188,255,0.4)] transition-all" data-category="Hackathon" onclick="selectCategory(this, 'Hackathon')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary animate-ping"></span>
+                #Hackathon
+              </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant font-body-sm text-body-sm font-medium flex items-center gap-1.5 hover:text-on-surface transition-all" data-category="CyberSecurity" onclick="selectCategory(this, 'CyberSecurity')" type="button">
+                #CyberSecurity
+              </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant font-body-sm text-body-sm font-medium flex items-center gap-1.5 hover:text-on-surface transition-all" data-category="Campus Social" onclick="selectCategory(this, 'Campus Social')" type="button">
+                #Campus Social
+              </button>
+<button class="category-chip px-3 py-1.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant font-body-sm text-body-sm font-medium flex items-center gap-1.5 hover:text-on-surface transition-all" data-category="Tech Talk" onclick="selectCategory(this, 'Tech Talk')" type="button">
+                #Tech Talk
+              </button>
+</div>
+</div>
+<!-- Capacity Counter Stepper & Date Block -->
+<div class="grid grid-cols-2 gap-2">
+<!-- Capacity Stepper -->
+<div class="bg-surface-container-highest/50 p-2.5 rounded flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Max Seats</span>
+<div class="flex items-center justify-between mt-1">
+<button class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright active:scale-95 transition-all" onclick="changeCapacity(-10)" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary" id="capacity-value">150</span>
+<button class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-bright active:scale-95 transition-all" onclick="changeCapacity(10)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Date Block -->
+<div class="bg-surface-container-highest/50 p-2.5 rounded flex flex-col justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Target Date</span>
+<div class="flex items-center gap-1.5 text-on-surface mt-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">calendar_clock</span>
+<input class="bg-transparent text-on-surface font-label-code text-label-code focus:outline-none w-full" type="date" value="2026-03-24"/>
+</div>
+</div>
+</div>
+<!-- Location Selector Input -->
+<div class="flex flex-col gap-1">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Location / Hub</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">location_on</span>
+<input class="w-full bg-surface-container-highest/60 text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded focus:outline-none focus:bg-surface-container-highest" id="event-location" type="text" value="Turing Labs, CS Atrium Level 3"/>
+</div>
+</div>
+<!-- Deploy CTA Button -->
+<button class="mt-1 w-full py-3.5 px-4 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_0_24px_rgba(208,188,255,0.4)] active:scale-[0.98] transition-all flex items-center justify-center gap-2" id="deploy-button" type="submit">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+<span>Deploy to Campus Pulse</span>
+</button>
+</form>
+<!-- Deploy Notification Pill (Hidden by Default) -->
+<div class="hidden mt-3 p-2.5 bg-secondary-container/20 rounded-full flex items-center justify-center gap-2 text-secondary font-body-sm text-body-sm animate-pulse" id="deploy-toast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Event deployed live to node ledger!</span>
+</div>
+</div>
+</div>
+<!-- Section Heading: Your Hosted Events -->
+<div class="px-margin pt-5 pb-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Your Hosted Events</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-badge text-label-badge">1 LIVE</span>
+</div>
+<span class="font-label-code text-label-code text-secondary flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[14px]">history</span> History
+      </span>
+</div>
+<!-- Active Event Card: CyberSecurity CTF 2026 -->
+<div class="px-margin py-2">
+<div class="bg-surface-container/90 rounded-lg p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Visual Accent Gradient Edge -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-tertiary"></div>
+<!-- Event Image Cover with Hologram Vibe -->
+<div class="relative w-full h-36 rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A neon cyber security competition hackathon arena in an electric campus laboratory, students coding in front of ultraviolet glowing computer screens with digital wireframe projections in violet, cyan, and deep midnight navy tones, high tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrPR4c0Gg2rRQWcjjs7qr291vomAmojnJ6mWwx-2pdei2K2v15_X36AFmnGEkdl8iatIhBrbpFWKBp6pc9ISjChGa7UOBZICQoGrOOhRO-5xL6aLPQaR9OzIisHg5GRA1e7auK6XiFUT2m-J8Iwg8mVSSlvw159i5qyym6XUH6zyiiKtga8VUYPlLK2bNg4yWsV28RpHLq9QnYewmqjimW7QNK6r2eVpjl3nz6xA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-wider">ACTIVE NOW</span>
+</div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary/20 backdrop-blur-md text-primary font-label-code text-label-code font-bold">
+              ID: ctf_8840_eng
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 text-on-surface font-label-code text-label-code">
+              Starts: Today 20:00
+            </span>
+</div>
+</div>
+<!-- Event Details Title -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">CyberSecurity CTF 2026</h3>
+<span class="text-tertiary font-label-badge text-label-badge bg-tertiary-container/20 px-2 py-0.5 rounded-full">PRIZE $2,500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">domain</span>
+<span>Engineering Quad Room 402 • Capture The Flag</span>
+</p>
+</div>
+<!-- Capacity Gauge Bar -->
+<div class="bg-surface-container-high/70 rounded p-2.5 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">groups</span>
+              Capacity Quota
+            </span>
+<span class="text-on-surface font-bold">
+<span class="text-secondary font-bold" id="attendee-count-stat">74</span> / 100 Seats
+            </span>
+</div>
+<!-- Gauge fill rail -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-primary" style="width: 74%;"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>26 seats open</span>
+<span class="text-primary font-medium">Rapid Fill (9.2/hr)</span>
+</div>
+</div>
+<!-- Quick Action Trigger Controls -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<!-- View Attendee List Button -->
+<button class="py-2.5 px-3 rounded bg-surface-container-highest/80 hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-[0.97]" id="toggle-roster-btn" onclick="toggleRoster()" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary">format_list_bulleted</span>
+<span>Attendee Roster</span>
+</button>
+<!-- Launch Scanner Preview Button -->
+<button class="py-2.5 px-3 rounded bg-secondary/15 hover:bg-secondary/25 text-secondary font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-[0.97]" onclick="openQrScannerModal()" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+<span>QR Scanner</span>
+</button>
+</div>
+<!-- Expandable Attendee List Modal / Drawer (/api/events/{id}/registrations) -->
+<div class="hidden flex-col gap-2 pt-2 border-t border-outline-variant/30" id="attendee-roster-panel">
+<div class="flex items-center justify-between font-label-code text-label-code text-on-surface-variant px-1">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">database</span>
+              GET /api/events/ctf_8840/registrations
+            </span>
+<span class="text-secondary font-bold">200 OK</span>
+</div>
+<!-- Dynamic Attendee Records List -->
+<div class="flex flex-col gap-1.5 max-h-56 overflow-y-auto pr-0.5" id="roster-list-container">
+<!-- Record Item 1 -->
+<div class="bg-surface-container-highest/60 rounded p-2 flex items-center justify-between gap-2 text-on-surface">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center font-label-badge text-label-badge shrink-0">
+                  MC
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-bold truncate">Maya Chen</span>
+<span class="font-label-code text-label-code text-outline text-[10px]">#usr_7e3d</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[10px]">19:42:04 • CS Junior</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-badge text-label-badge shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                CHECKED-IN
+              </span>
+</div>
+<!-- Record Item 2 -->
+<div class="bg-surface-container-highest/60 rounded p-2 flex items-center justify-between gap-2 text-on-surface">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-label-badge text-label-badge shrink-0">
+                  JR
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-bold truncate">Jordan Rao</span>
+<span class="font-label-code text-label-code text-outline text-[10px]">#usr_391a</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[10px]">19:48:19 • AI Lab Fellow</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-badge text-label-badge shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                CHECKED-IN
+              </span>
+</div>
+<!-- Record Item 3 -->
+<div class="bg-surface-container-highest/60 rounded p-2 flex items-center justify-between gap-2 text-on-surface">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-badge text-label-badge shrink-0">
+                  SL
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-bold truncate">Samantha Liu</span>
+<span class="font-label-code text-label-code text-outline text-[10px]">#usr_11a8</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[10px]">18:12:00 • ECE Freshman</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                CONFIRMED
+              </span>
+</div>
+<!-- Record Item 4 -->
+<div class="bg-surface-container-highest/60 rounded p-2 flex items-center justify-between gap-2 text-on-surface">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-badge text-label-badge shrink-0">
+                  KT
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-body-sm text-body-sm font-bold truncate">Kai Takahashi</span>
+<span class="font-label-code text-label-code text-outline text-[10px]">#usr_66c4</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[10px]">17:30:11 • Cryptography Club</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge shrink-0 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                CONFIRMED
+              </span>
+</div>
+</div>
+<!-- Roster Footer Info -->
+<div class="flex items-center justify-between pt-1 px-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing 4 of 74 registrants</span>
+<button class="text-secondary font-label-code text-label-code hover:underline" onclick="exportCsvNotification()" type="button">
+              Export CSV
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Past Event Card (Accordion style preview) -->
+<div class="px-margin py-2">
+<div class="bg-surface-container-low/70 rounded p-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Zero-Knowledge Meetup #4</span>
+<span class="font-body-sm text-body-sm text-outline">Concluded Feb 28 • 80/80 Attended</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-full bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase">ARCHIVED</span>
+</div>
+</div>
+</div>
+<!-- QR Check-in Scanner Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-surface/90 backdrop-blur-xl flex flex-col justify-between p-margin hidden transition-opacity" id="qr-scanner-modal">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pt-4">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Live Ticket Scanner</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-surface-bright active:scale-95" onclick="closeQrScannerModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Scanner Target Visual Zone -->
+<div class="relative flex flex-col items-center justify-center my-auto">
+<div class="relative w-64 h-64 rounded-2xl bg-surface-container-lowest/80 flex items-center justify-center overflow-hidden shadow-2xl">
+<!-- Laser Scan Animation Line -->
+<div class="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-secondary to-transparent animate-bounce"></div>
+<!-- Target Reticle Corners -->
+<div class="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-secondary rounded-tl-md"></div>
+<div class="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr-md"></div>
+<div class="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-secondary rounded-bl-md"></div>
+<div class="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-secondary rounded-br-md"></div>
+<!-- Center SVG Holographic Grid -->
+<svg class="w-32 h-32 opacity-30 text-secondary" fill="none" stroke="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="40" stroke-dasharray="4 4" stroke-width="1.5"></circle>
+<circle cx="50" cy="50" r="25" stroke-width="1"></circle>
+<line stroke-width="1" x1="50" x2="50" y1="10" y2="90"></line>
+<line stroke-width="1" x1="10" x2="90" y1="50" y2="50"></line>
+</svg>
+<span class="absolute font-label-code text-label-code text-secondary/80 bottom-3">ALIGN QR CODE</span>
+</div>
+<div class="mt-4 flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Target Event: CyberSecurity CTF</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scanning for verified CampusPulse passes</span>
+</div>
+</div>
+<!-- Manual ID Override & Flash controls -->
+<div class="flex flex-col gap-3 pb-6">
+<button class="w-full py-3 rounded-full bg-secondary text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(76,215,246,0.3)] active:scale-95" onclick="simulateScanSuccess()" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+<span>Simulate Student Verification</span>
+</button>
+<div class="flex items-center justify-center gap-4 text-on-surface-variant font-label-code text-label-code">
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">flashlight_on</span> Flash
+        </button>
+<span>•</span>
+<button class="flex items-center gap-1 hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard</span> Manual Hash Input
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentCapacity = 150;
+
+  function changeCapacity(delta) {
+    currentCapacity = Math.max(10, currentCapacity + delta);
+    document.getElementById('capacity-value').innerText = currentCapacity;
+  }
+
+  function selectCategory(el, name) {
+    const chips = document.querySelectorAll('.category-chip');
+    chips.forEach(chip => {
+      chip.className = 'category-chip px-3 py-1.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant font-body-sm text-body-sm font-medium flex items-center gap-1.5 hover:text-on-surface transition-all';
+      const dot = chip.querySelector('span');
+      if (dot) dot.remove();
+    });
+
+    el.className = 'category-chip px-3 py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium flex items-center gap-1.5 shadow-[0_0_14px_rgba(208,188,255,0.4)] transition-all';
+    const ping = document.createElement('span');
+    ping.className = 'w-1.5 h-1.5 rounded-full bg-on-primary animate-ping';
+    el.prepend(ping);
+  }
+
+  function deployEvent() {
+    const btn = document.getElementById('deploy-button');
+    const toast = document.getElementById('deploy-toast');
+    const originalText = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Publishing to Campus Grid...</span>`;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Deployed!</span>`;
+      btn.classList.add('bg-secondary');
+      toast.classList.remove('hidden');
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        btn.classList.remove('bg-secondary');
+        toast.classList.add('hidden');
+        document.getElementById('event-title').value = '';
+        document.getElementById('title-counter').innerText = '0/60';
+      }, 3000);
+    }, 1200);
+  }
+
+  function toggleRoster() {
+    const panel = document.getElementById('attendee-roster-panel');
+    const btn = document.getElementById('toggle-roster-btn');
+    if (panel.classList.contains('hidden')) {
+      panel.classList.remove('hidden');
+      panel.classList.add('flex');
+      btn.classList.add('bg-primary/20', 'text-primary');
+    } else {
+      panel.classList.add('hidden');
+      panel.classList.remove('flex');
+      btn.classList.remove('bg-primary/20', 'text-primary');
+    }
+  }
+
+  function openQrScannerModal() {
+    const modal = document.getElementById('qr-scanner-modal');
+    modal.classList.remove('hidden');
+  }
+
+  function closeQrScannerModal() {
+    const modal = document.getElementById('qr-scanner-modal');
+    modal.classList.add('hidden');
+  }
+
+  function simulateScanSuccess() {
+    alert("Pass Verified: Maya Chen (usr_7e3d) • Valid Entry Hash: #9FA1-CTF");
+    closeQrScannerModal();
+    const stat = document.getElementById('attendee-count-stat');
+    if (stat) stat.innerText = '75';
+  }
+
+  function exportCsvNotification() {
+    alert("Attendee manifest exported to local vault: ctf_8840_attendees.csv");
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-8px_32px_rgba(0,0,0,0.5)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-events" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-body-sm text-body-sm text-[11px]">Explore</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-passes" href="#"><span class="material-symbols-outlined text-[22px]">confirmation_number</span><span class="font-body-sm text-body-sm text-[11px]">Passes</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 relative transition-colors text-primary font-bold" data-path="host-event" href="#"><div class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(160,120,255,0.4)] text-on-primary -mt-3"><span class="material-symbols-outlined text-[20px]">add</span></div><span class="font-body-sm text-body-sm text-[11px]">Host</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-analytics" href="#"><span class="material-symbols-outlined text-[22px]">analytics</span><span class="font-body-sm text-body-sm text-[11px]">Analytics</span></a></div></nav></body></html>

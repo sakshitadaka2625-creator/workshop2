@@ -1,0 +1,18 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+local.env
+
+# Installed dependencies and virtual environments
+node_modules/
+venv/
+.venv/
+
+# Nested repository metadata
+.git
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
