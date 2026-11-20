@@ -1,6 +1,7 @@
 services:
   - type: web
     name: events-api
+    rootDir: backend
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
