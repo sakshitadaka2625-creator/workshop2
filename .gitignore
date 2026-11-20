@@ -9,10 +9,10 @@ node_modules/
 venv/
 .venv/
 
-# Nested repository metadata
-.git
-
 # Python cache
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Local agent metadata
+.agents/
