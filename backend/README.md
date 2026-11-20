@@ -13,7 +13,7 @@ Set these environment variables in the Render service settings:
 - `SUPABASE_URL`
 - `SUPABASE_PUBLISHABLE_KEY`
 
-The `.env` file is for local development and is ignored by Git. Do not upload it or commit database credentials.
+The `.env` file is for local development and is ignored by Git. Copy `.env.example` to `.env` and fill in your Supabase values. Do not upload the `.env` file or commit database credentials.
 
 ## Local run
 
